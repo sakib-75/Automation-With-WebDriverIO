@@ -34,6 +34,14 @@ class loginSignupPage extends Page {
         return $("[name='password']");
     }
 
+    nameInput() {
+        return $("[name='name']")
+    }
+
+    confirmPasswordInput() {
+        return $("[name='confirmPassword']")
+    }
+
 
     /*
     async login(email, password) {
