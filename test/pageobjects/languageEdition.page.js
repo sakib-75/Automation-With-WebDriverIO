@@ -7,7 +7,7 @@ class languageEditionPage extends Page {
     }
 
     banglaEdition() {
-        //return $("//a[@aria-label='বাংলা'])[1]");
+        return $("//*[@id='header']/div/div/div/div/div[1]/div[3]/div[2]/div[2]/div/ul/li[1]/a/input");
     }
 
     englishEdition() {
