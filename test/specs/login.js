@@ -4,20 +4,17 @@ describe('Login', () => {
 
     it('Login with facebook', async () => {
         await browser.maximizeWindow()
-        await loginPage.open("https://www.prothomalo.com/");
-        await loginPage.homeLoginBtn().click();
+        await loginPage.homeToLoginPage("https://www.prothomalo.com/");
         await loginPage.facebookBtn().click();
     });
 
     it('Login with google', async () => {
-        await loginPage.open("https://www.prothomalo.com/");
-        await loginPage.homeLoginBtn().click();
+        await loginPage.homeToLoginPage("https://www.prothomalo.com/");
         await loginPage.googleBtn().click();
     });
 
     it("Login with mail", async () => {
-        await loginPage.open("https://www.prothomalo.com/");
-        await loginPage.homeLoginBtn().click();
+        await loginPage.homeToLoginPage("https://www.prothomalo.com/");
         await loginPage.emailInput().setValue("sakibulislam285@gmail.com");
         await loginPage.passwordInput().setValue("123abc");
         await loginPage.loginBtn().click();

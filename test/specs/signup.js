@@ -4,24 +4,21 @@ describe('Signup', () => {
 
     it('Signup with facebook', async () => {
         await browser.maximizeWindow()
-        await signupPage.open("https://www.prothomalo.com/");
-        await signupPage.homeLoginBtn().click();
+        await signupPage.homeToLoginPage("https://www.prothomalo.com/");
         await signupPage.createAccountLink().click();
         await signupPage.facebookBtn().click();
 
     });
 
     it('Signup with google', async () => {
-        await signupPage.open("https://www.prothomalo.com/");
-        await signupPage.homeLoginBtn().click();
+        await signupPage.homeToLoginPage("https://www.prothomalo.com/");
         await signupPage.createAccountLink().click();
         await signupPage.googleBtn().click();
 
     });
 
     it('Signup with mail', async () => {
-        await signupPage.open("https://www.prothomalo.com/");
-        await signupPage.homeLoginBtn().click();
+        await signupPage.homeToLoginPage("https://www.prothomalo.com/");
         await signupPage.createAccountLink().click();
 
         await signupPage.nameInput().setValue("Sakibul Islam");
