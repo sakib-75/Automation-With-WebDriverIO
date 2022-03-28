@@ -11,11 +11,11 @@ class languageEditionPage extends Page {
     }
 
     englishEdition() {
-        //return $("//a[@aria-label='English'])[1]");
+        return $("//a[@aria-label='English'])[1]");
     }
 
     north_usaEdition() {
-        //return $("//a[@aria-label='উত্তর আমেরিকা'])[1]");
+        return $("//*[@id='header']/div/div/div/div/div[1]/div[3]/div[2]/div[2]/div/ul/li[3]/a/input");
     }
 
 
