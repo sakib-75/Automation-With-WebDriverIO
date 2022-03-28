@@ -1,4 +1,5 @@
 const Page = require('./page');
+const MenuBar = require('../pageobjects/menu_bar');
 
 class BangladeshMenu extends Page {
 
@@ -20,6 +21,12 @@ class BangladeshMenu extends Page {
 
     government() {
         return $("=Government");
+    }
+
+    async menuToBangladesh(url){
+        await this.open(url);
+        await MenuBar.menuClick();
+        await this.bangladesh().click();
     }
 
     open(path) {
