@@ -9,7 +9,7 @@ describe('Business Menu', () => {
         await MenuBar.menuClick();
         await BusinessMenu.business().click();
         await BusinessMenu.local().click();
-        await browser.pause(2000);
+        await expect(browser).toHaveUrlContaining('prothomalo.com/business/local');
     });
 
     it('Global Business', async () => {
@@ -17,7 +17,7 @@ describe('Business Menu', () => {
         await MenuBar.menuClick();
         await BusinessMenu.business().click();
         await BusinessMenu.global().click();
-        await browser.pause(2000);
+        await expect(browser).toHaveUrlContaining('prothomalo.com/business/global');
     });
 
 
