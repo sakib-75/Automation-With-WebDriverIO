@@ -1,4 +1,5 @@
 const Page = require('./page');
+const removeAD = require('../specs/removeAD');
 
 class loginSignupPage extends Page {
 
@@ -45,7 +46,7 @@ class loginSignupPage extends Page {
 
     async homeToLoginPage(url) {
         //await this.removeNotificationWindow();
-        await this.removeAD1();
+        await removeAD.removeAD2();
         await this.open(url);
         await this.homeLoginBtn().click();
     }
