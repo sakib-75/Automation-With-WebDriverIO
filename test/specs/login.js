@@ -3,7 +3,7 @@ const loginPage = require('../pageobjects/login_signup.page')
 describe('Login', () => {
 
     it('Login with facebook', async () => {
-        await browser.maximizeWindow()
+        await browser.maximizeWindow();
         await loginPage.homeToLoginPage("https://www.prothomalo.com/");
         await loginPage.facebookBtn().click();
     });
