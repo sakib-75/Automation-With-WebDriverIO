@@ -28,8 +28,8 @@ class RemoveAD {
     // Remove AD
     async removeAD2() {
         try {
-            await browser.switchToFrame("google_ads_iframe_85406138/home_Int_660x440_0");
-            let cancel = await $("#paloash_richmedia_close");
+            await browser.switchToFrame("google_ads_iframe_85406138/home_Int_660x440_0__container__");
+            let cancel = await $("//*[@id='closebutton']/img");
             await cancel.click();
 
         } catch (err) {

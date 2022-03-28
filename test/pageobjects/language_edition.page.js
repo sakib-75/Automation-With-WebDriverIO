@@ -11,7 +11,7 @@ class languageEditionPage extends Page {
     }
 
     englishEdition() {
-        return $("//a[@aria-label='English'])[1]");
+        return $("(//a[@aria-label='English'])[1]");
     }
 
     north_usaEdition() {
