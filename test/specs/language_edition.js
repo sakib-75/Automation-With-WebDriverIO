@@ -1,4 +1,4 @@
-const languageEditionPage = require('../pageobjects/languageEdition.page');
+const languageEditionPage = require('../pageobjects/language_edition.page');
 const RemoveAD = require('./removeAD');
 
 describe('Language Edition', () => {
